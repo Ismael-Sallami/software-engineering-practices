@@ -5,3 +5,13 @@
 **/*.toc
 **/*.fdb_latexmk
 **/*.synctex.gz
+**/*.bbl
+**/*.lof 
+**/*.blg 
+**/*.lol 
+**/*.lot
+
+
+
+
+
