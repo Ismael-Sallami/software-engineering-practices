@@ -1,6 +1,6 @@
 
 
-\section*{Entorno de usuario}
+\chapter{Entorno de usuario}
 
 Los usuarios directos del producto a desarrollar son dos, el turista y el guía. Su nivel cultural es medio y ambos tienen experiencia previa en el uso de aplicaciones informáticas, y en el turismo.
 
@@ -16,7 +16,6 @@ Turista & Representa un visitante & Usuario sistema & Consultar información tur
 Guía & Representa un guía turístico & Usuario sistema & Proveer información y asistencia \\ \hline
 Empleado & Representa un empleado & Usuario producto & Gestionar actividades turísticas \\ \hline
 Administrador & Representa el administrador del sistema & Usuario producto & Administrar y mantener el sistema \\ \hline
-Proveedor & Representa un proveedor de servicios & Usuario sistema & Suministrar servicios turísticos \\ \hline
 \end{tabular}
 \caption{Resumen de los implicados}
 \label{tab:resumen_implicados}
@@ -24,43 +23,45 @@ Proveedor & Representa un proveedor de servicios & Usuario sistema & Suministrar
 
 \section*{Perfiles de los implicados}
 
-\subsection*{Cliente}
+\subsection*{Turista}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{5cm}|p{10cm}|}
 \hline
 \rowcolor[HTML]{CFE2F3} 
-\textbf{Representante} & Juan Sánchez \\ \hline
-\textbf{Descripción} & Cliente \\ \hline
-\textbf{Tipo} & No utiliza el sistema de forma directa, sino que desencadena que otros usuarios hagan uso del mismo. Además será un usuario casual. \\ \hline
-\textbf{Responsabilidades} & Hacerse socio. Comprar películas. \\ \hline
-\textbf{Criterios de éxito} & Que el sistema le permita realizar sus actividades de la forma más sencilla posible. Que sepa siempre qué películas puede comprar. \\ \hline
-\textbf{Implicación} & Utilizará el sistema una vez para hacerse socio del videoclub, o de forma esporádica para comprar películas. \\ \hline
-\textbf{Comentarios/Cuestiones} & \\ \hline
+\textbf{Representante} & Ana López \\ \hline
+\textbf{Descripción} & Turista \\ \hline
+\textbf{Tipo} & Utiliza el sistema de forma ocasional para reservar tours y obtener información sobre destinos turísticos. \\ \hline
+\textbf{Responsabilidades} & Buscar y reservar guías turísticos. Explorar información sobre destinos. Valorar y comentar sobre los servicios recibidos. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita encontrar y reservar un guía de forma sencilla. Que pueda acceder a información clara y útil sobre los destinos turísticos. \\ \hline
+\textbf{Implicación} & Usará el sistema de manera ocasional cuando viaje y necesite contratar un guía turístico. \\ \hline
+\textbf{Comentarios/Cuestiones} & Posibilidad de incluir recomendaciones personalizadas basadas en intereses previos. \\ \hline
 \end{tabular}
-\caption{Perfil del Cliente}
-\label{tab:perfil_cliente}
+\caption{Perfil del Turista}
+\label{tab:perfil_turista}
 \end{table}
 
-\subsection*{Socio}
+
+\subsection*{Guía Turístico}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{5cm}|p{10cm}|}
 \hline
 \rowcolor[HTML]{CFE2F3} 
-\textbf{Representante} & Ana García \\ \hline
-\textbf{Descripción} & Socio \\ \hline
-\textbf{Tipo} & No utiliza el sistema de forma directa, sino que desencadena que otros usuarios hagan uso del mismo. Usará el sistema frecuentemente. \\ \hline
-\textbf{Responsabilidades} & Alquilar películas. Comprar películas. Realizar pagos. Incrementar saldo. Reservar películas. \\ \hline
-\textbf{Criterios de éxito} & Que el sistema le permita realizar sus actividades de la forma más sencilla posible. Que sepa siempre qué películas hay disponibles para alquilar y comprar, y cuál es el saldo de su cuenta. \\ \hline
-\textbf{Implicación} & Utilizará el sistema para alquilar y comprar películas. \\ \hline
-\textbf{Comentarios/Cuestiones} & \\ \hline
+\textbf{Representante} & Carlos Ramírez \\ \hline
+\textbf{Descripción} & Guía Turístico \\ \hline
+\textbf{Tipo} & Utiliza el sistema de forma frecuente para gestionar sus servicios y atender a los turistas. \\ \hline
+\textbf{Responsabilidades} & Publicar y administrar tours. Gestionar reservas de turistas. Actualizar disponibilidad. Responder consultas de turistas. Recibir pagos por sus servicios. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita gestionar sus reservas y servicios de manera sencilla. Que pueda comunicarse fácilmente con los turistas. Que tenga un control claro de su disponibilidad y pagos. \\ \hline
+\textbf{Implicación} & Utilizará el sistema regularmente para administrar sus tours y atender a los turistas. \\ \hline
+\textbf{Comentarios/Cuestiones} & Posibilidad de integración con plataformas de pago y sistemas de mensajería. \\ \hline
 \end{tabular}
-\caption{Perfil del Socio}
-\label{tab:perfil_socio}
+\caption{Perfil del Guía Turístico}
+\label{tab:perfil_guia}
 \end{table}
+
 
 \subsection*{Empleado}
 
@@ -69,49 +70,53 @@ Proveedor & Representa un proveedor de servicios & Usuario sistema & Suministrar
 \begin{tabular}{|p{5cm}|p{10cm}|}
 \hline
 \rowcolor[HTML]{CFE2F3} 
-\textbf{Representante} & María Rodríguez \\ \hline
-\textbf{Descripción} & Usuario del sistema \\ \hline
-\textbf{Tipo} & Responsabilidad media \\ \hline
-\textbf{Responsabilidades} & Alquilar y vender películas a los socios. Vender películas a los clientes. Hacer reservas de alquiler. Anotar peticiones de los socios. Dar de alta/baja a socios y películas, y modificar datos. \\ \hline
-\textbf{Criterios de éxito} & Hay éxito si hace un buen control de las películas y si los clientes y socios saben en todo momento qué películas hay disponibles. También hay éxito si las peticiones y reservas de los socios se tienen en cuenta. \\ \hline
-\textbf{Implicación} & Es el encargado de la gestión del alquiler y ventas de películas, y del control de socios. \\ \hline
-\textbf{Comentarios/Cuestiones} & Está familiarizado con sistemas informáticos \\ \hline
+\textbf{Representante} & Laura Pérez \\ \hline
+\textbf{Descripción} & Empleado del sistema \\ \hline
+\textbf{Tipo} & Utiliza el sistema de forma frecuente para asistir en la gestión de reservas y soporte a turistas y guías. \\ \hline
+\textbf{Responsabilidades} & Validar y gestionar las reservas. Brindar soporte a turistas y guías. Actualizar información sobre los servicios disponibles. Monitorear incidencias y reportar problemas. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita gestionar reservas de manera eficiente. Que pueda asistir rápidamente a los usuarios en caso de dudas o problemas. \\ \hline
+\textbf{Implicación} & Usará el sistema de manera diaria para administrar las operaciones y asistencia. \\ \hline
+\textbf{Comentarios/Cuestiones} & Se podría implementar un sistema de alertas para incidencias y solicitudes urgentes. \\ \hline
 \end{tabular}
 \caption{Perfil del Empleado}
 \label{tab:perfil_empleado}
 \end{table}
 
-\subsection*{Encargado}
+
+\subsection*{Administrador}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{5cm}|p{10cm}|}
 \hline
 \rowcolor[HTML]{CFE2F3} 
-\textbf{Representante} & Antonio Fernández \\ \hline
-\textbf{Descripción} & Encargado \\ \hline
-\textbf{Tipo} & Experto \\ \hline
-\textbf{Responsabilidades} & Gestión de los proveedores. Gestión económica. \\ \hline
-\textbf{Criterios de éxito} & Hay éxito si hay un buen control de las películas existentes y pedidas. También si se conoce qué proveedores suministran qué películas y se gestionan los pagos de éstas. Hay éxito si en todo momento conoce los ingresos y gastos del negocio. \\ \hline
-\textbf{Implicación} & Es el responsable de hacer los pedidos y gestionar las compras a los proveedores. Realiza la gestión económica. \\ \hline
-\textbf{Comentarios/Cuestiones} & Está familiarizado con sistemas informáticos \\ \hline
+\textbf{Representante} & Miguel Rodríguez \\ \hline
+\textbf{Descripción} & Administrador del sistema \\ \hline
+\textbf{Tipo} & Usuario con acceso total al sistema, encargado de la gestión general y supervisión del servicio. \\ \hline
+\textbf{Responsabilidades} & Administrar usuarios (turistas, guías y empleados). Supervisar la operatividad del sistema. Gestionar reportes y estadísticas. Resolver problemas técnicos y de operación. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita tener un control eficiente de la plataforma. Que pueda generar reportes y tomar decisiones basadas en datos. \\ \hline
+\textbf{Implicación} & Utilizará el sistema regularmente para supervisar y optimizar su funcionamiento. \\ \hline
+\textbf{Comentarios/Cuestiones} & Se recomienda la implementación de herramientas analíticas para mejorar la gestión. \\ \hline
 \end{tabular}
-\caption{Perfil del Encargado}
-\label{tab:perfil_encargado}
+\caption{Perfil del Administrador}
+\label{tab:perfil_administrador}
 \end{table}
+
+\subsection*{Principales necesidades de los implicados}
 
 \subsection*{Principales necesidades de los implicados}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
 \rowcolor[HTML]{CFE2F3} 
 \textbf{Necesidad} & \textbf{Prioridad} & \textbf{Problema} & \textbf{Solución actual} & \textbf{Solución propuesta} \\ \hline
-Alquiler-consulta & Alta & Difícil saber qué películas se pueden alquilar & Buscar en las estanterías & Ofrecer un catálogo informatizado con búsquedas para los socios \\ \hline
-Reserva & Media & ¿Cuándo anular una reserva? & Las reservas no se respetan, el primero que llega, alquila la película & Se avisa automáticamente (e-mail) o por teléfono en cuanto la película queda libre. Si no hay respuesta, se anula \\ \hline
-Alquiler-consulta histórica & Media & ¿Cómo se ya he visto una película para no volverla a alquilar? & El socio debe confiar en su memoria & Se lleva un histórico con las películas que ha alquilado cada socio \\ \hline
-Alquiler-identificación & Alta & He olvidado el carné de socio para alquilar & Si el socio es conocido por el empleado o encargado, se le alquila, en otro caso no & Con el número de DNI es suficiente para identificar al socio y alquilarle la película \\ \hline
+Reserva de guías & Alta & Difícil saber qué guías están disponibles en una fecha específica & Contactar manualmente a los guías & Implementar un sistema de reservas en línea con disponibilidad en tiempo real \\ \hline
+Información sobre destinos & Media & Falta de información detallada sobre los destinos turísticos & Buscar información en internet o preguntar a otros viajeros & Proporcionar una sección con descripciones, fotos y reseñas de los destinos \\ \hline
+Historial de reservas & Media & Dificultad para recordar qué tours se han realizado & El turista debe confiar en su memoria o revisar correos & Implementar un historial de reservas accesible desde el perfil del usuario \\ \hline
+Identificación de turistas & Alta & El turista puede olvidar sus datos de registro al reservar un tour & Proporcionar datos manualmente al guía & Usar el correo electrónico o un código QR para la identificación rápida \\ \hline
+Soporte y asistencia & Alta & Turistas y guías pueden necesitar ayuda con problemas en las reservas & Contacto manual con la agencia o guías & Incorporar un chat de soporte en línea para resolver dudas en tiempo real \\ \hline
 \end{tabular}
 \caption{Principales necesidades de los implicados}
 \label{tab:necesidades_implicados}
