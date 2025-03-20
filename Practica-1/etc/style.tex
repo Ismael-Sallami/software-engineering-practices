@@ -1,0 +1,137 @@
+% Formato del título de capítulos y secciones
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries}{\thechapter.}{.5em}{\Huge}[\vspace{2pt}{\titlerule[2pt]}]
+
+\titlespacing*{\chapter}{0pt}{-19pt}{25pt}
+
+\titleformat{\section}[block]{\normalfont\Large\bfseries}{\thesection.}{.5em}{\Large}
+
+\titleformat{\part}[block]{\titlerule[2pt]\normalfont\Huge\bfseries\centering}{Parte \Roman{part}\\\vspace{15pt}}{0pt}{\Huge}[\vspace{2pt}{\titlerule[2pt]}]
+
+% Tamaños y estilos de elementos en la TOC
+\DeclareTOCStyleEntry[
+    linefill=\bfseries\TOCLineLeaderFill,
+    beforeskip=12pt,
+    entrynumberformat=\chapterprefixintoc,
+    entryformat=\chaptertocformat,
+    pagenumberformat=\chaptertocformat,
+    dynnumwidth
+]{tocline}{chapter}
+
+\DeclareTOCStyleEntry[
+    % linefill=\bfseries\TOCLineLeaderFill,
+    beforeskip=30pt,
+    entrynumberformat=\chapterprefixintoc,
+    entryformat=\parttocformat,
+    pagenumberformat=\partpagetocformat,
+    numwidth=0pt
+]{tocline}{part}
+
+\newcommand\chaptertocformat[1]{\large{\textbf{#1}}}%
+\newcommand\chapterprefixintoc[1]{#1}%
+\newcommand\parttocformat[1]{\Large{\textbf{#1}}}%
+\newcommand\partpagetocformat[1]{} % Don't print the page number for parts
+
+% Alias para estilos de texto comunes
+\newcommand{\negritas}[1]{\textbf{#1}}
+\newcommand{\cursiva}[1]{\textit{#1}}
+\newcommand{\codigo}[1]{\texttt{#1}}
+
+% Formato del código fuente con lstlisting
+\lstset{
+  basicstyle=\ttfamily,
+  breaklines=true,
+}
+
+% Márgenes
+\geometry{
+    a4paper,
+    margin=2.75cm
+}
+\setlength{\marginparwidth}{2cm} 
+
+% Limite de profundidad del índice
+\setcounter{tocdepth}{2}
+
+% Eliminar el guionado
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% Indentación de párrafos
+\setlength{\parindent}{.75cm}
+
+\renewcommand{\lstlistingname}{Extracto de código}
+\renewcommand*{\lstlistlistingname}{Índice de extractos de código}
+
+% Comandos para establecer variables
+\newcommand{\setTitle}[1]{\def\tfgTitle {#1}}
+\newcommand{\setAuthor}[1]{\def\tfgAuthors {#1}}
+\newcommand{\setDegree}[1]{\def\tfgDegree {#1}}
+\newcommand{\setSupervisor}[1]{\def\tfgSupervisor {#1}}
+\newcommand{\setDepartment}[1]{\def\tfgDepartment {#1}}
+\newcommand{\setMonth}[1]{\def\tfgMonth {#1}}
+\newcommand{\setYear}[1]{\def\tfgYear {#1}}
+\newcommand{\setDedication}[1]{\def\tfgDedication {#1}}
+
+% Estilos para el código
+% Configuración genérica
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{editorOcher}{rgb}{0.8, 0.3, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
+
+\lstdefinestyle{listingstyle}{
+    backgroundcolor=\color{white},  
+    keywordstyle=\bfseries\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{editorGreen},
+    commentstyle=\color{codegray},
+    basicstyle=\ttfamily\color{black},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=tb,
+    keywords=[2]{True,False},
+    literate=%
+*{0}{{{\color{editorOcher}0}}}1
+{1}{{{\color{editorOcher}1}}}1
+{2}{{{\color{editorOcher}2}}}1
+{3}{{{\color{editorOcher}3}}}1
+{4}{{{\color{editorOcher}4}}}1
+{5}{{{\color{editorOcher}5}}}1
+{6}{{{\color{editorOcher}6}}}1
+{7}{{{\color{editorOcher}7}}}1
+{8}{{{\color{editorOcher}8}}}1
+{9}{{{\color{editorOcher}9}}}1,
+}
+
+\lstset{style=listingstyle}
+\lstset{columns=fullflexible}
+
+\lstdefinelanguage{css}{
+  keywords={color,background-image:,margin,padding,font,weight,display,position,top,left,right,bottom,list,style,border,size,white,space,min,width, transition:, transform:, transition-property, transition-duration, transition-timing-function},	
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  alsoletter={:},
+  alsodigit={-}
+}
+% JavaScript
+\lstdefinelanguage{javascript}{
+  morekeywords={abstract, arguments, await, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, double, else, enum, eval, export, extends, false, final, finally, float, for, function, goto, if, implements, import, in, instanceof, int, interface, let, long, native, new, null, package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, void, volatile, while, with, yield},
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  morestring=[b]",
+  morestring=[b]'
+}

@@ -1,0 +1,57 @@
+\thispagestyle{empty} % Impide que se incluya número de página en la portada
+\begin{center}
+
+\vspace*{1cm}
+
+%\includegraphics[width=0.3\textwidth]{figures/etsiit.png}
+%\includegraphics[width=0.49\textwidth]{figures/UGR.png}
+\includegraphics[width=0.49\textwidth]{figures/logo_etsiit_horizontal.png}
+
+
+\vspace*{3cm}
+\begin{large}
+Práctica 1
+\end{large}
+
+\vspace*{0.1in}
+\textbf{\huge \tfgTitle}
+
+\vspace*{.2in}
+
+{\large Realizado por}\\
+\textbf{\Large \tfgAuthors}
+
+\vspace*{3cm}
+
+\textbf{Titulación}\\
+{\large \tfgDegree}
+
+\vspace*{0.2in}
+
+% \textbf{Dirigido por}\\
+% {\large \tfgSupervisor}\\
+
+\vspace*{0.2in}
+
+\textbf{De la Asigantura de}\\
+{\large \tfgDepartment}
+
+\vspace*{.6in}
+\textbf{Curso \tfgYear}
+
+\end{center}
+
+% Dedicatoria
+\ifdefined\tfgDedication
+    \newpage
+    \thispagestyle{empty}
+    
+    \vspace*{\fill}
+    \begin{center}
+    \textit{\tfgDedication}
+    \end{center}
+    \vspace*{\fill}
+\fi
+
+\clearpage\setcounter{page}{1} % Comienza a incluir números de página a partir de aquí
+\pagenumbering{roman} % En números romanos
