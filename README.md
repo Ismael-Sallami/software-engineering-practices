@@ -24,7 +24,7 @@ Nuestro objetivo es desarrollar una base sólida en los principios y metodologí
 
 ---
 
-# Estructuración y Uso del Repositorio  
+# Estructuración y Uso del Repositorio  FIS/Practica_1
 
 Cada integrante debe editar su respectivo archivo `pn.tex`, ubicado en `Practica1/Capitulos`, donde `n` corresponde a la parte asignada (Como acordamos al inicio).  
 
