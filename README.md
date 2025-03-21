@@ -26,7 +26,7 @@ Nuestro objetivo es desarrollar una base sólida en los principios y metodologí
 
 # Estructuración y Uso del Repositorio  FIS/Practica_1
 
-Cada integrante debe editar su respectivo archivo `pn.tex`, ubicado en `Practica1/Capitulos`, donde `n` corresponde a la parte asignada (Como acordamos al inicio). Al inicio la carpeta donde trabajabamos se llamaba LaTeX, ahora esta renonmbrada dentro de Practica_1/ como Practica-1 para usar nombre más adecuados. 
+Cada integrante debe editar su respectivo archivo `pn.tex`, ubicado en `Practica1/Capitulos`, donde `n` corresponde a la parte asignada (Como acordamos al inicio). Al inicio la carpeta donde trabajabamos se llamaba LaTeX, ahora esta renonmbrada dentro de Practica_1/ como Practica-1 para usar nombre más adecuados, así que se recomienda mover el contenido de cada parte de cada uno a Practica_1/Practica-1/Capitulos para que todo funcione como se explica a continuación. Al final, se eliminará el directorio LaTeX ya que es extra.
 
 Para generar el PDF con el formato correcto, es necesario compilar el archivo global de cada práctica. Por ejemplo, en `Practica1`, se debe compilar `Practica1.tex` (Cabe destacar que no tiene porque llamarse el fichero .tex como el directorio).
 
