@@ -1,35 +1,36 @@
 \chapter{Requisitos No Funcionales}
 
-\section{Rendimiento y Escalabilidad}
+% 
+
+\subsection*{Rendimiento y Escalabilidad}
 \begin{itemize}
-    \item \textbf{RNF1:} El sistema debe procesar una reserva en menos de 2 segundos. El tiempo de carga de las páginas no debe superar 1 segundo en condiciones normales de tráfico.
-    \item \textbf{RNF2:} El sistema debe soportar hasta 10,000 reservas diarias sin degradar el rendimiento y permitir la ampliación de servidores en temporadas altas.
-    \item \textbf{RNF3:} El sistema debe estar disponible el 99.9\% del tiempo, exceptuando mantenimientos programados.
+    \item \textbf{\textcolor{red}{RNF1}:} El sistema debe procesar una reserva en menos de 2 segundos. El tiempo de carga de las páginas no debe superar 1 segundo en condiciones normales de tráfico.
+    \item \textbf{\textcolor{red}{RNF2}:} El sistema debe soportar hasta 10,000 reservas diarias sin degradar el rendimiento y permitir la ampliación de servidores en temporadas altas.
+    \item \textbf{\textcolor{red}{RNF3}:} El sistema debe estar disponible el 99.9\% del tiempo, exceptuando mantenimientos programados.
 \end{itemize}
 
-\subsection{Seguridad y Protección de Datos}
+\subsection*{Seguridad y Protección de Datos}
 \begin{itemize}
-    \item \textbf{RNF4:} Se requiere autenticación de usuario con contraseña y opción de autenticación en dos pasos (2FA). Solo los administradores pueden gestionar actividades y acceder a reportes financieros.
-    \item \textbf{RNF5:} Toda la información sensible se almacenará cifrada cumpliendo con el RGPD. Los datos de tarjetas de crédito no se almacenarán en el sistema.
-    \item \textbf{RNF6:} Cada código QR generado será único e intransferible, válido solo para una entrada.
+    \item \textbf{\textcolor{red}{RNF4}:} Se requiere autenticación de usuario con contraseña y opción de autenticación en dos pasos (2FA). Solo los administradores pueden gestionar actividades y acceder a reportes financieros.
+    \item \textbf{\textcolor{red}{RNF5}:} Toda la información sensible se almacenará cifrada cumpliendo con el RGPD (Real Decreto de Protección de Datos). Los datos de tarjetas de crédito no se almacenarán en el sistema.
+    \item \textbf{\textcolor{red}{RNF6}:} Cada código QR generado será único e intransferible, válido solo para una entrada.
 \end{itemize}
 
-\subsection{Usabilidad y Experiencia de Usuario}
+\subsection*{Usabilidad y Experiencia de Usuario}
 \begin{itemize}
-    \item \textbf{RNF7:} La plataforma debe ser accesible desde móviles y ordenadores, permitiendo completar una reserva en un máximo de tres clics.
-    \item \textbf{RNF8:} Cumplimiento con WCAG 2.1 para garantizar accesibilidad (modo alto contraste, lectores de pantalla, etc.).
-    \item \textbf{RNF9:} La plataforma debe estar disponible en español e inglés, como mínimo.
+    \item \textbf{\textcolor{red}{RNF7}:} La plataforma debe ser accesible desde móviles y ordenadores.
+    \item \textbf{\textcolor{red}{RNF9}:} La plataforma debe estar disponible en español e inglés, como mínimo.
 \end{itemize}
 
-\subsection{Mantenibilidad y Actualización}
+\subsection*{Mantenibilidad y Actualización}
 \begin{itemize}
-    \item \textbf{RNF10:} El sistema debe ser modular para facilitar actualizaciones sin afectar la funcionalidad principal.
-    \item \textbf{RNF11:} Se debe registrar en logs los eventos críticos, accesibles solo para administradores.
-    \item \textbf{RNF12:} Las actualizaciones deben programarse en horarios de baja demanda y notificarse con 48 horas de antelación.
+    \item \textbf{\textcolor{red}{RNF10}:} El sistema debe ser modular para facilitar actualizaciones sin afectar la funcionalidad principal.
+    \item \textbf{\textcolor{red}{RNF11}:} Se debe registrar en logs los eventos críticos, accesibles solo para administradores.
+    \item \textbf{\textcolor{red}{RNF12}:} Las actualizaciones deben programarse en horarios de baja demanda y notificarse con 48 horas de antelación.
 \end{itemize}
 
-\subsection{Integración con otras Aplicaciones y Utilidades}
+\subsection*{Integración con otras Aplicaciones y Utilidades}
 \begin{itemize}
-    \item \textbf{RNF13:} Se debe integrar con PayPal y Google Pay.
-    \item \textbf{RNF14:} Las reservas deben poder añadirse automáticamente al calendario del cliente.
+    \item \textbf{\textcolor{red}{RNF13}:} Se debe integrar con PayPal y Google Pay, entre otros.
+    \item \textbf{\textcolor{red}{RNF14}:} Las reservas deben poder añadirse automáticamente al calendario del cliente.
 \end{itemize}

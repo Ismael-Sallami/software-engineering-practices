@@ -4,7 +4,7 @@
 
 Los usuarios directos del producto a desarrollar son dos, el turista y el guía. Su nivel cultural es medio y ambos tienen experiencia previa en el uso de aplicaciones informáticas, y en el turismo.
 
-\section*{Resumen de los implicados}
+\section{Resumen de los implicados}
 
 \begin{table}[H]
 \centering
@@ -12,10 +12,10 @@ Los usuarios directos del producto a desarrollar son dos, el turista y el guía.
 \hline
 \rowcolor[HTML]{CFE2F3} 
 \textbf{Nombre} & \textbf{Descripción} & \textbf{Tipo} & \textbf{Responsabilidad} \\ \hline
-Turista & Representa un visitante & Usuario sistema & Consultar información turística \\ \hline
+Turista & Representa un visitante & Usuario producto & Consultar/Hacer uso de la información turística\\ \hline
 Guía Turístico & Representa un guía turístico & Usuario sistema & Proveer información y asistencia \\ \hline
-Empleado & Representa un empleado & Usuario producto & Gestionar actividades turísticas \\ \hline
-Administrador & Representa el administrador del sistema & Usuario producto & Administrar y mantener el sistema \\ \hline
+Empleado & Representa un empleado & Usuario sistema & Gestionar actividades turísticas \\ \hline
+Administrador & Representa el administrador del sistema & Usuario sistema & Administrar y mantener el sistema \\ \hline
 \end{tabular}
 \caption{Resumen de los implicados}
 \label{tab:resumen_implicados}
@@ -35,7 +35,7 @@ Administrador & Representa el administrador del sistema & Usuario producto & Adm
 \textbf{Tipo} & Utiliza el sistema de forma ocasional para reservar tours y obtener información sobre destinos turísticos. \\ \hline
 \textbf{Responsabilidades} & Buscar y reservar guías turísticos. Explorar información sobre destinos. Valorar y comentar sobre los servicios recibidos. \\ \hline
 \textbf{Criterios de éxito} & Que el sistema le permita encontrar y reservar un guía de forma sencilla. Que pueda acceder a información clara y útil sobre los destinos turísticos. \\ \hline
-\textbf{Implicación} & Usará el sistema de manera ocasional cuando viaje y necesite contratar un guía turístico. \\ \hline
+\textbf{Implicación} & Usará el sistema de manera esporádica cuando viaje y necesite contratar un guía turístico. \\ \hline
 \textbf{Comentarios/Cuestiones} & Posibilidad de incluir recomendaciones personalizadas basadas en intereses previos. \\ \hline
 \end{tabular}
 \caption{Perfil del Turista}
@@ -52,8 +52,8 @@ Administrador & Representa el administrador del sistema & Usuario producto & Adm
 \rowcolor[HTML]{CFE2F3} 
 \textbf{Representante} & Carlos Ramírez \\ \hline
 \textbf{Descripción} & Guía Turístico \\ \hline
-\textbf{Tipo} & Utiliza el sistema de forma frecuente para gestionar sus servicios y atender a los turistas. \\ \hline
-\textbf{Responsabilidades} & Publicar y administrar tours. Gestionar reservas de turistas. Actualizar disponibilidad. Responder consultas de turistas. Recibir pagos por sus servicios. \\ \hline
+\textbf{Tipo} & Atiende a los turistas y los guía. \\ \hline
+\textbf{Responsabilidades} & Utiliza el sistema de forma frecuente para asistir en la gestión de reservas y soporte a turistas y guías.  \\ \hline
 \textbf{Criterios de éxito} & Que el sistema le permita gestionar sus reservas y servicios de manera sencilla. Que pueda comunicarse fácilmente con los turistas. Que tenga un control claro de su disponibilidad y pagos. \\ \hline
 \textbf{Implicación} & Utilizará el sistema regularmente para administrar sus tours y atender a los turistas. \\ \hline
 \textbf{Comentarios/Cuestiones} & Posibilidad de integración con plataformas de pago y sistemas de mensajería. \\ \hline
@@ -72,7 +72,7 @@ Administrador & Representa el administrador del sistema & Usuario producto & Adm
 \rowcolor[HTML]{CFE2F3} 
 \textbf{Representante} & Laura Pérez \\ \hline
 \textbf{Descripción} & Empleado del sistema \\ \hline
-\textbf{Tipo} & Utiliza el sistema de forma frecuente para asistir en la gestión de reservas y soporte a turistas y guías. \\ \hline
+\textbf{Tipo} & Se encarga del mantenimiento y otras tareas informáticas. \\ \hline
 \textbf{Responsabilidades} & Validar y gestionar las reservas. Brindar soporte a turistas y guías. Actualizar información sobre los servicios disponibles. Monitorear incidencias y reportar problemas. \\ \hline
 \textbf{Criterios de éxito} & Que el sistema le permita gestionar reservas de manera eficiente. Que pueda asistir rápidamente a los usuarios en caso de dudas o problemas. \\ \hline
 \textbf{Implicación} & Usará el sistema de manera diaria para administrar las operaciones y asistencia. \\ \hline
@@ -92,7 +92,7 @@ Administrador & Representa el administrador del sistema & Usuario producto & Adm
 \rowcolor[HTML]{CFE2F3} 
 \textbf{Representante} & Miguel Rodríguez \\ \hline
 \textbf{Descripción} & Administrador del sistema \\ \hline
-\textbf{Tipo} & Usuario con acceso total al sistema, encargado de la gestión general y supervisión del servicio. \\ \hline
+\textbf{Tipo} & Usuario con acceso total al sistema, encargado de la gestión general y supervisión del servicio. Se encarga de publicar y administrar tours. Gestionar reservas de turistas. Actualizar disponibilidad. Responder consultas de turistas. Recibir pagos por sus servicios.\\ \hline
 \textbf{Responsabilidades} & Administrar usuarios (turistas, guías y empleados). Supervisar la operatividad del sistema. Gestionar reportes y estadísticas. Resolver problemas técnicos y de operación. \\ \hline
 \textbf{Criterios de éxito} & Que el sistema le permita tener un control eficiente de la plataforma. Que pueda generar reportes y tomar decisiones basadas en datos. \\ \hline
 \textbf{Implicación} & Utilizará el sistema regularmente para supervisar y optimizar su funcionamiento. \\ \hline
