@@ -1,14 +1,31 @@
 PDF_DIR := PDFs
-FILES := $(shell find . -type f \( -name "p.pdf" -o -name "main.pdf" -o -name "Practica1.pdf" \))
+TEX_FILES := Formato_Opcion_2/p.tex Formato_Opcion_3/main.tex Practica-1/Practica1.tex
+PDF_FILES := $(TEX_FILES:.tex=.pdf)
 
-all: create_dir move_files rename_files
+all: create_dir compile_tex move_files rename_files
 
 create_dir:
 	@mkdir -p $(PDF_DIR)
 
-move_files: $(FILES)
-	@for file in $(FILES); do \
-	    cp "$$file" "$(PDF_DIR)/"; \
+compile_tex:
+	@for file in $(TEX_FILES); do \
+	    if [ -f "$$file" ]; then \
+	        dir=$$(dirname "$$file"); \
+	        filename=$$(basename "$$file" .tex); \
+	        (cd "$$dir" && pdflatex -interaction=nonstopmode -halt-on-error "$$filename.tex" >/dev/null); \
+	    else \
+	        echo "Archivo $$file no encontrado"; \
+	    fi \
+	done
+
+move_files:
+	@mkdir -p $(PDF_DIR)
+	@for file in $(PDF_FILES); do \
+	    if [ -f "$$file" ]; then \
+	        cp "$$file" "$(PDF_DIR)/"; \
+	    else \
+	        echo "No se encontró $$file"; \
+	    fi \
 	done
 
 rename_files:
@@ -20,3 +37,4 @@ rename_files:
 	    esac; \
 	    [ -f "$$file" ] && mv "$$file" "$$new_name"; \
 	done
+
