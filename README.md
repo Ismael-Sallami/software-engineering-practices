@@ -34,3 +34,18 @@ Como alternativa, se puede generar todos los PDFs de una vez ejecutando `make`. 
 
 ---
 
+# Práctica 2 
+
+- Para las tablas: 
+  1. Acceder al enlace: https://www.tablesgenerator.com/latex_tables#
+  2. Copiar la tabla, añade debajo las dos mini-tablas de propósito y de resumen.
+  3. Junta las celdas con la opción que aparece arriba.
+  4. Asegurate de que la fuente de la letra (cursiva, gris, etc) es correcto.
+  5. Presiona Generate y copia y pega en la ubicación que indico a continuación: Practica_2/Chapters/Descripcion_casos_uso/<el_nombre_de_tu_parte.tex>
+  6. Accede al fichero situado en Practica_2/Chapters/Descripcion_casos_uso.tex y haz el input de la manera en la que esta el primero (ruta relativa del archivo main.tex)
+  7. Compila y visualiza el contenido en formato pdf.
+
+## Anotaciones importantes.
+  Seguramente las tablas se salgan del pdf en las filas de resumen y demás, para ello debes de cambiar el parámetro de "l" a "p{15cm}", he elegido 15 porque suele ser el tamaño estándar del pdf, pero puedes editarlo a tu antojo. Recomiendo que mires la parte de Practica_2/Chapters/Descripcion_casos_uso/Web_Soporte.tex y lo tomes como referencia.
+
+De esta manera creo que el formato del pdf queda mejor. PD: Ismael ;)
