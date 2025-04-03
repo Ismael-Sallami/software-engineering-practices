@@ -49,4 +49,4 @@ Como alternativa, se puede generar todos los PDFs de una vez ejecutando `make`. 
 ## Anotaciones importantes.
   Seguramente las tablas se salgan del pdf en las filas de resumen y demás, para ello debes de cambiar el parámetro de "l" a "p{15cm}", he elegido 15 porque suele ser el tamaño estándar del pdf, pero puedes editarlo a tu antojo. Recomiendo que mires la parte de Practica_2/Chapters/Descripcion_casos_uso/Web_Soporte.tex y lo tomes como referencia.
 
-De esta manera creo que el formato del pdf queda mejor. PD: Ismael ;)
+De esta manera creo que el formato del pdf queda mejor. 
