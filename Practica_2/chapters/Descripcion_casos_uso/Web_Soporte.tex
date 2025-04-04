@@ -1,3 +1,5 @@
+
+
 % PARTE DE JULIAN  UC11- AL 18 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -142,6 +144,177 @@
 
 
 % arriba de esto parte de JULIAN -------------------------------------------------------------------------------------------------------------------------------------
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Registrar pago}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-19}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado, Administrador}}}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Básico, Esencial}}}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{{\color[HTML]{808080} \textit{RF-3}}}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Existen una reserva y un empleado que pueda registrar el pago.}}}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Registrar el pago de una reserva.}}}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El empleado se encargará de, una vez se haya producido una reserva, registrar el pago correspondiente a la misma.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Emitir factura}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-20}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado, Administrador}}}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Básico, Esencial}}}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{{\color[HTML]{808080} \textit{RF-3.2}}}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Existe una reserva a la que asociar una factura.}}}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Registrar el pago de una reserva.}}}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Una vez se haga una reserva, se debe generar una factura para dejar constancia del pago de cara a la contabilización de los flujos monetarios de la empresa.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Enviar factura a cliente}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-21}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Empleado, Administrador}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.2}              & \multicolumn{5}{l|}{CU-20}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{Existe una factura asociada al cliente que la solicita.}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Enviar a un cliente la factura asociada a su reserva.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Una vez se haga una reserva, existe la posibilidad de enviar la factura de la reserva al cliente para que tenga constancia de la misma.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Descargar Factura}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-22}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Empleado, Administrador, Cliente}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.2}              & \multicolumn{5}{l|}{CU-20}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{Existe una factura que poder descargar.}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Descargar la factura de una reserva.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Una vez se realice una reserva, tanto el empleado, como el administrador como el cliente tendrán la posibilidad de descargar la factura asociada a la misma.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Elegir método de pago}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-23}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Cliente}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.1}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Poder variar la forma de pago de una reserva.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{El cliente tendrá la posibilidad de elegir distintos métodos de pago en la web para abonar la cuantía de la reserva.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Procesar Reembolsos}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-24}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Empleado, Administrador}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.3}              & \multicolumn{5}{l|}{CU-25, CU-26}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{Existe una reserva previa de la que procesar un reembolso.}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Llevar a cabo el reembolso de una reserva.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Si un cliente no está de acuerdo con algún aspecto de su reserva, podrá solicitar un reembolso, el cual será procesado bien por un empleado o por el administrador.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Consultar Datos Cliente}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-25}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Empleado, Administrador, Cliente}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Acceder a los datos de un determinado cliente.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Para realizar diferentes tareas, es necesario acceder a los datos de un cliente para poder obtener otra información del mismo que haga falta.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Modificar Reserva}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-26}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Empleado, Administrador}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.3}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{Existencia de un reembolso que requiera modificar una reserva.}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Modificar los datos asociados a una reserva.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{En caso de realizarse un reembolso, será necesario que un empleado o administrador modifique la reserva previamente realizada para poder o bien eliminarla o bien modificar algunos aspectos de la misma.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Consultar Historial de Pagos}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-27}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Administrador, Cliente}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3}              & \multicolumn{5}{l|}{CU-25}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Ver los pagos realizados por un cliente.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Tanto el administrador (por ser información confidencial) como el cliente podrán acceder al historial de pagos del cliente en cuestión.} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Configurar Métodos de Pago}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-28}          \\ \hline
+    \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{Administrador}                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{Primario, Esencial}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Referencias}       & \multicolumn{2}{l|}{RF-3.1}              & \multicolumn{5}{l|}{}                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Precondición}      & \multicolumn{7}{l|}{}                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}      & \multicolumn{7}{l|}{}                                                                                                                                                                  \\ \hline
+    \multicolumn{1}{|l|}{Autor}             & \multicolumn{1}{l|}{}                        & \multicolumn{2}{l|}{Fecha}           & \multicolumn{1}{l|}{}     & \multicolumn{2}{l|}{Versión}         & 1.0                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                          \\ \hline
+    \multicolumn{8}{|p{15cm}|}{Configurar el correcto funcionamiento de los métodos de pago.}                                                                                                           \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                            \\ \hline
+    \multicolumn{8}{|p{15cm}|}{El administrador deberá configurar y supervisar a nivel interno que todos los métodos de pago disponibles en la web funcionen de forma correcta además de solucionar los posibles errores producidos en los mismos.} \\ \hline
+    \end{tabular}
+\end{table}
+
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -311,3 +484,4 @@
     \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Se permite reservar y comprar paquetes de manera online por parte del cliente gracias a la implementación de la web por parte de los trabajadores de la empresa turística.}}} \\ \hline
     \end{tabular}
     \end{table}
+
