@@ -13,20 +13,104 @@
 
 \chapter{Parte de Ismael Sallami Moreno}
 
+% ======Tabla Caso de uso Número: 10 =========================
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Reembolso reserva}}}                                                                                                                                                                & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-10}}}                                                   \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Cliente Regsitrado(I),Banco, Sistema PayPal}}}                                                                                                                                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}}                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{p{8cm}|}{CU-11 Reembolso tarjeta (hijo), CU-12 Reembolso Bizum (hijo), CU-13 Reembolso PayPal (hijo)}                                                                                                                                                                                                                                    \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Un cliente registrado debe haber solicitado la cancelación de una reserva.}}}                                                                                                                                                                                                                                   \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{El dinero de la reserva debe haber sido devuelto al cliente.}}}                                                                                                                                                                                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Ismael Sallami Moreno}}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{}                          & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{1.0}                                                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permite que un cliente registrado pueda recibir el reembolso por la cancelación de una reserva.}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Este caso de uso permite obtener el reembolso de la cantidad pagada por una reserva, se realizará según la forma de pago realizada: tarjeta (caso de uso Reembolso tarjeta), Bizum (caso de uso Reembolso Bizum), Paypal (caso de uso Reembolso PayPal).}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|p{0.6cm}|p{6.5cm}|p{0.6cm}|p{6.5cm}|}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \multicolumn{4}{|l|}{Curso Normal (Básico)} \\
+    \hline
+    1 & \textit{Un cliente registrado pide el reembolso de una reserva.} & & \textit{} \\
+    \hline
+     & \textit{} & 2 & \textit{El sistema busca cuál fue el método de pago empleado en dicha reserva.} \\
+    \hline
+    & & 3 & \textit{El sistema procede al reembolso equivalente al método de pago de la reserva.} \\
+    \hline
+    & & 4 & \textit{El sistema notifica si el reembolso ha sido realizado correctamente o no.} \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|p{0.6cm}|p{13.4cm}|}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \multicolumn{2}{|l|}{Cursos Alternos} \\
+    \hline
+    3a & \textit{Si el pago fue con PayPal, incluir CU-13 (Reembolso PayPal).} \\
+    \hline
+    3b & \textit{Si el pago fue con Bizum, incluir CU-12 (Reembolso Bizum).} \\
+    \hline
+    3c & \textit{Si el pago fue con tarjeta, incluir CU-11 (Reembolso tarjeta).} \\
+    \hline
+    4a & \textit{Si el reembolso se realizó correctamente, se envía un justificante al cliente con la cancelación.} \\
+    \hline
+    4b & \textit{Si el reembolso falló, se cancela el proceso de cancelación y termina el caso de uso.} \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \rowcolor[HTML]{E6E6E6} % Cambiado a gris claro
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos}                                                                                                                                                                                                                                                                                                        \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}} \\ \hline
+    \multicolumn{1}{|l|}{Importancia}         & \multicolumn{1}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}}   & \multicolumn{1}{l|}{Urgencia}    & \multicolumn{5}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}}                          \\ \hline
+    \multicolumn{1}{|l|}{Estado}              & \multicolumn{1}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}}                   & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}}                                            \\ \hline
+    \end{tabular}
+\end{table}
+
 % ======Tabla Caso de uso Número: 11 =========================
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+\newpage
 \begin{table}[H]
     \begin{tabular}{llllllll}
     \hline
     \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Reembolso de la tarjeta}}}                                                                                                                                                                & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-11}}}                                                   \\ \hline
-    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Cliente Registrado, Empleado(I)}}}                                                                                                                                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Cliente Registrado(I), Banco}}}                                                                                                                                                                                                                                                                                               \\ \hline
     \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}}                                                                                                                                                                                                                                                                                                             \\ \hline
-    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{l|}{}                                                                                                                                                                                                                                    \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{l|}{CU-10 Reembolso Reserva (Padre)}                                                                                                                                                                                                                                    \\ \hline
     \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{El cliente debe de estar registrado y debe de existir una reservar pagada mediante tarjeta.}}}                                                                                                                                                                                                                                   \\ \hline
     \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{El importe de la reserva es devuelto al cliente a través de su tarjeta.}}}                                                                                                                                                                                                                                                       \\ \hline
-    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{}}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{}                          & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{1.0}                                                     \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Ismael Sallami Moreno}}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{}                          & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{1.0}                                                     \\ \hline
     \end{tabular}
     \end{table}
 
@@ -650,6 +734,9 @@
         \multicolumn{1}{|l|}{Estado}              & \multicolumn{1}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Definido. En espera de implementación.}}                   & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Alta. Los requisitos están claros y bien delimitados.}}                                            \\ \hline
         \end{tabular}
     \end{table}
+
+
+
     
     
     
