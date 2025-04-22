@@ -19,6 +19,28 @@
 \begin{table}[H]
     \begin{tabular}{|llllllll|}
     \hline
+    \multicolumn{1}{|l|}{\textbf{Actor}}       & \multicolumn{5}{l|}{\textbf{\textcolor{blue}{Cliente}}}                                                  & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}AC-1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Descripción}} & \multicolumn{7}{p{13cm}|}{{\color[HTML]{808080} \textit{Representa un potencial socio del Videoclub. Este actor se usa para representar a un cliente del videoclub antes de ser socio del mismo.}}} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Características}} & \multicolumn{7}{p{13cm}|}{{\color[HTML]{808080} \textit{Puede realizar consultas, registrar reservas, actualizar sus datos, y comprar paquetes sin necesidad de ser aún socio formal.}}} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Relaciones}}      & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Generalización de “Socio”}}} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Referencias}}     & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{DCU (Gestión de Clientes)}}} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Autor}}           & \multicolumn{1}{l|}{LSI}                   & \multicolumn{2}{l|}{\textbf{Fecha}} & \multicolumn{1}{l|}{} & \multicolumn{2}{l|}{\textbf{Versión}} & 2.0 \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Atributos}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{Nombre}} & \multicolumn{5}{l|}{\textbf{Descripción}} & \textbf{Tipo} \\ \hline
+    \multicolumn{2}{|l|}{idCliente} & Identificador único del cliente & Numérico \\ \hline
+    \multicolumn{2}{|l|}{nombreCompleto} & Nombre y apellidos del cliente & Cadena \\ \hline
+    \multicolumn{2}{|l|}{email} & Correo electrónico de contacto & Cadena \\ \hline
+    \multicolumn{2}{|l|}{telefono} & Número de contacto & Numérico \\ \hline
+    \multicolumn{2}{|l|}{estado} & Indica si es activo o inactivo & Booleano \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Comentarios}} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El cliente puede interactuar con el sistema antes de ser socio, facilitando el registro progresivo.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \begin{tabular}{|llllllll|}
+    \hline
     \multicolumn{1}{|l|}{Caso de Uso}       & \multicolumn{5}{l|}{Emitir factura}                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}CU-20}          \\ \hline
     \multicolumn{1}{|l|}{Actores}           & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado, Administrador}}}                                                                                                                           \\ \hline
     \multicolumn{1}{|l|}{Tipo}              & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Básico, Esencial}}}                                                                                                                \\ \hline
@@ -32,6 +54,8 @@
     \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Una vez se haga una reserva, se debe generar una factura para dejar constancia del pago de cara a la contabilización de los flujos monetarios de la empresa.}}} \\ \hline
     \end{tabular}
 \end{table}
+
+
 
 \begin{table}[H]
     \begin{tabular}{|llllllll|}
