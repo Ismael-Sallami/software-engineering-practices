@@ -1,0 +1,619 @@
+% Alicia del 18 - 25
+
+% Listar Actividades
+% Anular actividad
+% Anular Reserva
+% Activar Periodo de Reserva de Actividad
+% Definir máximo de reservas por persona
+% Definir precios dias especiales
+% Definir precios por grupo de edad
+% Registrar acceso a actividad
+
+\chapter{Parte de Alicia Ruiz Gómez}
+
+
+ % ======Tabla Caso de uso Número: 18 =========================
+ \begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Listar actividades}}}                                                                                                                                                                & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-18}}}                                                   \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado, Encargado, Cliente(I)}}}                                                                                                                                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}}                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{l|}{}                                                                                                                                                                                                                                    \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{El sistema debe contener actividades registradas.}}}                                                                                                                                                                                                                                   \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{El sistema muestra una lista de actividades disponibles según los filtros aplicados.}}}                                                                                                                                                                                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{}Alicia Ruiz Gómez}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{}15/04/2025}}                         & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{1.0}                                                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permitir a los actores visualizar las actividades disponibles en el sistema, aplicando filtros como tipo, fecha, ubicación, entre otros, para facilitar la búsqueda.}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Este caso de uso permite a los actores consultar las actividades registradas en el sistema. Los resultados pueden ser filtrados y ordenados según las preferencias del usuario, como tipo de actividad, rango de fechas, ubicación, entre otros.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)}                                                                                                                                                                                                                                                                          \\ \hline
+    \multicolumn{1}{|c|}{1}  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{El actor accede a la opción de listar actividades.}}} & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                    & \multicolumn{5}{l|}{{\color[HTML]{808080} }}                                                                                            \\ \hline
+    \multicolumn{1}{|c|}{2}   & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Aplica filtros y criterios de búsqueda según sus necesidades.}}}                                                 & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{}}}                         \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                                                          & \multicolumn{1}{l|}{{\color[HTML]{808080} \textbf{3}}}          & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema muestra la lista de actividades que cumplen con los filtros aplicados.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos}                                                                                                                                                                                                                                                                                \\ \hline
+    \multicolumn{1}{|c|}{3a} & \multicolumn{7}{p{15cm}|}{{\color[HTML]{808080} Si no se encuentran actividades que cumplan con los filtros, el sistema informa al actor que no hay resultados disponibles.}}                                                                                                                                      \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 19 =========================
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Anular actividad}}}                                                                                                                                                                & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-19}}}                                                   \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado, Encargado(I)}}}                                                                                                                                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}}                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{l|}{}                                                                                                                                                                                                                                    \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{El actor debe estar autenticado en el sistema con rol de “Empleado” o “Encargado” y debe existir una actividad previamente registrada.}}}                                                                                                                                                                                                                                   \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{La actividad queda marcada como anulada en el sistema y no estará disponible para reservas futuras.}}}                                                                                                                                                                                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{}Alicia Ruiz Gómez}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{}15/04/2025}}                         & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{1.0}                                                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permitir al actor “Empleado” o “Encargado” anular una actividad previamente registrada en el sistema, asegurando que no tenga reservas activas asociadas.}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Este caso de uso permite anular actividades que ya no serán ofrecidas a los clientes. Antes de proceder, el sistema verifica que no existan reservas activas asociadas a la actividad. Si las condiciones se cumplen, la actividad se marca como anulada en el sistema y deja de estar disponible para nuevas reservas.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)}                                                                                                                                                                                                                                                                          \\ \hline
+    \multicolumn{1}{|c|}{1}  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{El actor accede al listado de actividades.}}} & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                    & \multicolumn{5}{l|}{{\color[HTML]{808080} }}                                                                                            \\ \hline
+    \multicolumn{1}{|c|}{2}   & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Selecciona la actividad a anular.}}}                                                 & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{}}}                         \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                                                          & \multicolumn{1}{l|}{{\color[HTML]{808080} \textbf{3}}}          & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema verifica que no existan reservas activas asociadas.}}} \\ \hline
+    \multicolumn{1}{|c|}{}  & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} }} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textbf{4}}}                    & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema solicita confirmación para anular la actividad.}}}                                                                                            \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                                                          & \multicolumn{1}{l|}{{\color[HTML]{808080} 5}}                   & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} El sistema marca la actividad como anulada en la base de datos.}}                                  \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{{\color[HTML]{808080} }}                                                          & \multicolumn{1}{l|}{{\color[HTML]{808080} 6}}                   & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} El sistema informa al actor de la correcta anulación de la actividad.}}                                  \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos}                                                                                                                                                                                                                                                                                \\ \hline
+    \multicolumn{1}{|c|}{3a} & \multicolumn{7}{p{15cm}|}{{\color[HTML]{808080} Si existen reservas activas asociadas, el sistema informa al actor que no se puede anular la actividad.}}                                                                                                                                      \\ \hline
+    \multicolumn{1}{|c|}{5a} & \multicolumn{7}{p{15cm}|}{{\color[HTML]{808080} Si ocurre un fallo en el almacenamiento, el sistema informa del error y sugiere reintentar.}}                                                                                                                                      \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 20 =========================
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Anular reserva}}}                                                                                                                                                                & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-20}}}                                                   \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Empleado (I)}}}                                                                                                                                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}}                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{2}{l|}{}                                                                                                   & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{CU-19}}}                                                                                                                                                                                                                                    \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Debe existir una reserva activa que se desea anular.}}}                                                                                                                                                                                                                                   \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{La reserva queda anulada y se puede proceder al reembolso si aplica.}}}                                                                                                                                                                                                                                                       \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}}                           & \multicolumn{2}{l|}{Fecha}                                                   & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}}                          & \multicolumn{2}{l|}{Versión}                                                      & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}}                                                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permitir al empleado anular una reserva activa desde el sistema.}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El empleado accede al sistema, selecciona la reserva que desea anular y confirma la anulación. El sistema valida el estado de la reserva, realiza el cambio correspondiente y, si aplica, procede al proceso de reembolso.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+    \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El empleado accede a la opción de gestión de reservas.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{2} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Selecciona la reserva activa que desea anular.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{3} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Solicita la anulación.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{p{6cm}|}{} & \multicolumn{1}{c|}{4} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema muestra una confirmación y actualiza el estado de la reserva.}}} \\ \hline
+    \end{tabular}
+    
+\end{table}
+
+
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos}                                                                                                                                                                                                                                                                                \\ \hline
+    \multicolumn{1}{|c|}{2a} & \multicolumn{7}{p{15cm}|}{{\color[HTML]{808080} Si la reserva ya está anulada, el sistema informa que no se puede volver a anular.}}                                                                                                                                      \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 21 =========================
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Activar periodo de reserva de actividad}}}                                                                                                                     & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-21}}} \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Encargado (I)}}} \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}} \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Debe existir una actividad definida.}}} \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{La actividad está disponible para reservas.}}} \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}} & \multicolumn{2}{l|}{Versión} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permitir que se active el periodo de reserva de una actividad.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El encargado selecciona la actividad y define el periodo de tiempo en el cual estará disponible para reservas.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+    \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El encargado accede al sistema y selecciona la actividad}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{2} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Define el periodo de inicio y fin para permitir reservas.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{p{6cm}|}{} & \multicolumn{1}{c|}{3} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema activa el periodo y actualiza la disponibilidad.}}} \\ \hline
+    \end{tabular}
+    
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos} \\ \hline
+    \multicolumn{1}{|c|}{2a} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{El encargado no define un rango de fechas válido.}}} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{} & \multicolumn{6}{l|}{{\color[HTML]{808080} \textit{El sistema muestra un mensaje de error y solicita ingresar fechas válidas.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 22 =========================
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Definir máximo reserva por persona}}}                                                                                                                     & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-22}}} \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Encargado (I)}}} \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario Esencial}}} \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Debe existir al menos una actividad activa o definida.}}} \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Se establece un límite de reservas por usuario.}}} \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}} & \multicolumn{2}{l|}{Versión} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Establecer un límite de reservas por persona para controlar la demanda.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El encargado accede a la configuración de la actividad y define el número máximo de reservas por usuario.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+    \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El encargado accede a la configuración de la actividad.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|c|}{2} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Define el número máximo de reservas por usuario.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{}}} & \multicolumn{1}{c|}{3} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema guarda la configuración y aplica las restricciones de reserva.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos} \\ \hline
+    \multicolumn{1}{|c|}{2a} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{El encargado introduce un valor no válido (ej. negativo o no numérico).}}} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{El sistema muestra un mensaje de error y solicita ingresar un valor válido.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{-}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 23 =========================
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso}                            & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Definir precios días especiales}}}                                                                                                                     & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-23}}} \\ \hline
+    \multicolumn{1}{|l|}{Actores}                                & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Encargado (I)}}} \\ \hline
+    \multicolumn{1}{|l|}{Tipo}                                   & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Secundario, Esencial}}} \\ \hline
+    \multicolumn{1}{|l|}{Referencias}                            & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|l|}{Precondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Debe existir una actividad programada.}}} \\ \hline
+    \multicolumn{1}{|l|}{Poscondición}                           & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Se registran los precios diferenciados por fechas especiales.}}} \\ \hline
+    \multicolumn{1}{|l|}{Autor}                                  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}} & \multicolumn{2}{l|}{Versión} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Asignar precios distintos en fechas especiales.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El encargado selecciona la actividad y configura precios especiales en ciertas fechas.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+    \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El encargado selecciona la actividad.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{2} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Define fechas especiales y sus precios correspondientes.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{p{6cm}|}{} & \multicolumn{1}{c|}{3} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema registra y guarda las tarifas especiales.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos} \\ \hline
+    \multicolumn{1}{|c|}{1a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{El encargado cancela la operación. No se aplican tarifas especiales.}}} \\ \hline
+    \multicolumn{1}{|c|}{3a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{El sistema detecta conflicto con fechas ya asignadas. Se solicita al encargado modificar las fechas o precios.}}} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \begin{tabular}{|l
+    >{\columncolor[HTML]{FFFFFF}}l l
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l 
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+    \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{-}}}                                                                                                                                                                                                             \\ \hline
+    \end{tabular}
+\end{table}
+
+% ======Tabla Caso de uso Número: 24 =========================
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{1}{|l|}{Caso de Uso} & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Definir precios por grupo de edad}}} & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-24}}} \\ \hline
+    \multicolumn{1}{|l|}{Actores} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Encargado (I)}}} \\ \hline
+    \multicolumn{1}{|l|}{Tipo} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Secundario, Esencial}}} \\ \hline
+    \multicolumn{1}{|l|}{Referencias} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{}}} \\ \hline
+    \multicolumn{1}{|l|}{Precondición} & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Debe existir una actividad definida.}}} \\ \hline
+    \multicolumn{1}{|l|}{Poscondición} & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Se registran precios diferenciados por grupos de edad.}}} \\ \hline
+    \multicolumn{1}{|l|}{Autor} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}} & \multicolumn{2}{l|}{Versión} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    \begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Asignar tarifas según grupo de edad.}}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    \begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El encargado accede a la actividad y establece tarifas diferenciadas por edades (niños, adultos, mayores).}}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    \begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+    \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El encargado selecciona la actividad.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{2} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{Establece precios por grupo de edad.}}} & \multicolumn{1}{c|}{} & \multicolumn{5}{p{6cm}|}{} \\ \hline
+    \multicolumn{1}{|c|}{} & \multicolumn{1}{p{6cm}|}{} & \multicolumn{1}{c|}{3} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema guarda y aplica la configuración.}}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos} \\ \hline
+        \multicolumn{1}{|c|}{1a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{El encargado cancela la operación. No se aplican tarifas diferenciadas.}}} \\ \hline
+        \multicolumn{1}{|c|}{3a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{El sistema detecta solapamiento con precios previamente definidos. Se solicita al encargado ajustar los valores.}}} \\ \hline
+        \end{tabular}
+        \end{table}
+
+        \begin{table}[H]
+            \begin{tabular}{|l
+            >{\columncolor[HTML]{FFFFFF}}l l
+            >{\columncolor[HTML]{FFFFFF}}l 
+            >{\columncolor[HTML]{FFFFFF}}l 
+            >{\columncolor[HTML]{FFFFFF}}l 
+            >{\columncolor[HTML]{FFFFFF}}l 
+            >{\columncolor[HTML]{FFFFFF}}l |}
+            \hline
+            \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+            \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+            \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+            \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+            \end{tabular}
+            \end{table}
+    
+    \begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios} \\ \hline
+    \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{-}}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    % ======Tabla Caso de uso Número: 25 =========================
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{1}{|l|}{Caso de Uso} & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Registrar acceso a actividad}}} & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{CU-25}}} \\ \hline
+        \multicolumn{1}{|l|}{Actores} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Responsable (I), Cliente}}} \\ \hline
+        \multicolumn{1}{|l|}{Tipo} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{Primario, Esencial}}} \\ \hline
+        \multicolumn{1}{|l|}{Referencias} & \multicolumn{7}{l|}{} \\ \hline
+        \multicolumn{1}{|l|}{Precondición} & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{La actividad debe de existir en el sistema.}}} \\ \hline
+        \multicolumn{1}{|l|}{Poscondición} & \multicolumn{7}{p{10cm}|}{{\color[HTML]{808080} \textit{Se quedará registrado el acceso del cliente en la actividad en el sistema.}}} \\ \hline
+        \multicolumn{1}{|l|}{Autor} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Alicia Ruiz Gómez}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{15/04/2025}}} & \multicolumn{2}{l|}{Versión} & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{1.0}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito} \\ \hline
+        \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{Permitir al responsable poder registrar al cliente sus accesos a las actividades.}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen} \\ \hline
+        \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{El responsable registra el acceso de un cliente a cierta actividad.}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)} \\ \hline
+        \multicolumn{1}{|c|}{1} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El responsable selecciona la opción para registrar el acceso a la actividad.}}} & \multicolumn{1}{c|}{2} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema muestra el conjunto de actividades al que es posible hacer el acceso.}}} \\ \hline
+        \multicolumn{1}{|c|}{3} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El responsable elige la actividad del cliente.}}} & \multicolumn{1}{c|}{4} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema pide el ID del cliente.}}} \\ \hline
+        \multicolumn{1}{|c|}{5} & \multicolumn{1}{p{6cm}|}{{\color[HTML]{808080} \textit{El responsable introduce las credenciales del cliente.}}} & \multicolumn{1}{c|}{6} & \multicolumn{5}{p{6cm}|}{{\color[HTML]{808080} \textit{El sistema registra el acceso del cliente a la actividad.}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos} \\ \hline
+        \multicolumn{1}{|c|}{3a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{Si la actividad que solicita el cliente no está disponible, se le deberá de informar al cliente.}}} \\ \hline
+        \multicolumn{1}{|c|}{5a} & \multicolumn{7}{p{14cm}|}{{\color[HTML]{808080} \textit{Si el cliente no está registrado previamente, deberá rellenar la información necesaria primero.}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{|l
+        >{\columncolor[HTML]{FFFFFF}}l l
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l |}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos} \\ \hline
+        \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+        \multicolumn{1}{|l|}{Importancia} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Urgencia} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+        \multicolumn{1}{|l|}{Estado} & \multicolumn{1}{p{5cm}|}{} & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{p{5cm}|}{} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+        \begin{table}[H]
+        \begin{tabular}{llllllll}
+        \hline
+        \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios} \\ \hline
+        \multicolumn{8}{|p{15cm}|}{{\color[HTML]{808080} \textit{-}}} \\ \hline
+        \end{tabular}
+        \end{table}
+        
+    
