@@ -1,0 +1,121 @@
+
+
+\chapter{Entorno de usuario}
+
+Los usuarios directos del producto a desarrollar son dos, el turista y el guía. Su nivel cultural es medio y ambos tienen experiencia previa en el uso de aplicaciones informáticas, y en el turismo.
+
+\section*{Resumen de los implicados}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{3cm}|p{4cm}|p{4cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Nombre} & \textbf{Descripción} & \textbf{Tipo} & \textbf{Responsabilidad} \\ \hline
+Turista & Representa un visitante & Usuario producto & Consultar/Hacer uso de la información turística\\ \hline
+Guía Turístico & Representa un guía turístico & Usuario sistema & Proveer información y asistencia \\ \hline
+Empleado & Representa un empleado & Usuario sistema & Gestionar actividades turísticas \\ \hline
+Administrador & Representa el administrador del sistema & Usuario sistema & Administrar y mantener el sistema \\ \hline
+\end{tabular}
+\caption{Resumen de los implicados}
+\label{tab:resumen_implicados}
+\end{table}
+
+\section*{Perfiles de los implicados}
+
+\subsection*{Turista}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{10cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Representante} & Ana López \\ \hline
+\textbf{Descripción} & Turista \\ \hline
+\textbf{Tipo} & Utiliza el sistema de forma ocasional para reservar tours y obtener información sobre destinos turísticos. \\ \hline
+\textbf{Responsabilidades} & Buscar y reservar guías turísticos. Explorar información sobre destinos. Valorar y comentar sobre los servicios recibidos. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita encontrar y reservar un guía de forma sencilla. Que pueda acceder a información clara y útil sobre los destinos turísticos. \\ \hline
+\textbf{Implicación} & Usará el sistema de manera esporádica cuando viaje y necesite contratar un guía turístico. \\ \hline
+\textbf{Comentarios/Cuestiones} & Posibilidad de incluir recomendaciones personalizadas basadas en intereses previos. \\ \hline
+\end{tabular}
+\caption{Perfil del Turista}
+\label{tab:perfil_turista}
+\end{table}
+
+
+\subsection*{Guía Turístico}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{10cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Representante} & Carlos Ramírez \\ \hline
+\textbf{Descripción} & Guía Turístico \\ \hline
+\textbf{Tipo} & Atiende a los turistas y los guía. \\ \hline
+\textbf{Responsabilidades} & Utiliza el sistema de forma frecuente para asistir en la gestión de reservas y soporte a turistas y guías.  \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita gestionar sus reservas y servicios de manera sencilla. Que pueda comunicarse fácilmente con los turistas. Que tenga un control claro de su disponibilidad y pagos. \\ \hline
+\textbf{Implicación} & Utilizará el sistema regularmente para administrar sus tours y atender a los turistas. \\ \hline
+\textbf{Comentarios/Cuestiones} & Posibilidad de integración con plataformas de pago y sistemas de mensajería. \\ \hline
+\end{tabular}
+\caption{Perfil del Guía Turístico}
+\label{tab:perfil_guia}
+\end{table}
+
+
+\subsection*{Empleado}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{10cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Representante} & Laura Pérez \\ \hline
+\textbf{Descripción} & Empleado del sistema \\ \hline
+\textbf{Tipo} & Se encarga del mantenimiento y otras tareas informáticas. \\ \hline
+\textbf{Responsabilidades} & Validar y gestionar las reservas. Brindar soporte a turistas y guías. Actualizar información sobre los servicios disponibles. Monitorear incidencias y reportar problemas. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita gestionar reservas de manera eficiente. Que pueda asistir rápidamente a los usuarios en caso de dudas o problemas. \\ \hline
+\textbf{Implicación} & Usará el sistema de manera diaria para administrar las operaciones y asistencia. \\ \hline
+\textbf{Comentarios/Cuestiones} & Se podría implementar un sistema de alertas para incidencias y solicitudes urgentes. \\ \hline
+\end{tabular}
+\caption{Perfil del Empleado}
+\label{tab:perfil_empleado}
+\end{table}
+
+
+\subsection*{Administrador}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{10cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Representante} & Miguel Rodríguez \\ \hline
+\textbf{Descripción} & Administrador del sistema \\ \hline
+\textbf{Tipo} & Usuario con acceso total al sistema, encargado de la gestión general y supervisión del servicio. Se encarga de publicar y administrar tours. Gestionar reservas de turistas. Actualizar disponibilidad. Responder consultas de turistas. Recibir pagos por sus servicios.\\ \hline
+\textbf{Responsabilidades} & Administrar usuarios (turistas, guías y empleados). Supervisar la operatividad del sistema. Gestionar reportes y estadísticas. Resolver problemas técnicos y de operación. \\ \hline
+\textbf{Criterios de éxito} & Que el sistema le permita tener un control eficiente de la plataforma. Que pueda generar reportes y tomar decisiones basadas en datos. \\ \hline
+\textbf{Implicación} & Utilizará el sistema regularmente para supervisar y optimizar su funcionamiento. \\ \hline
+\textbf{Comentarios/Cuestiones} & Se recomienda la implementación de herramientas analíticas para mejorar la gestión. \\ \hline
+\end{tabular}
+\caption{Perfil del Administrador}
+\label{tab:perfil_administrador}
+\end{table}
+
+\subsection*{Principales necesidades de los implicados}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\rowcolor[HTML]{CFE2F3} 
+\textbf{Necesidad} & \textbf{Prioridad} & \textbf{Problema} & \textbf{Solución actual} & \textbf{Solución propuesta} \\ \hline
+Reserva de guías & Alta & Difícil saber qué guías están disponibles en una fecha específica & Contactar manualmente a los guías & Implementar un sistema de reservas en línea con disponibilidad en tiempo real \\ \hline
+Información sobre destinos & Media & Falta de información detallada sobre los destinos turísticos & Buscar información en internet o preguntar a otros viajeros & Proporcionar una sección con descripciones, fotos y reseñas de los destinos \\ \hline
+Historial de reservas & Media & Dificultad para recordar qué tours se han realizado & El turista debe confiar en su memoria o revisar correos & Implementar un historial de reservas accesible desde el perfil del usuario \\ \hline
+Identificación de turistas & Alta & El turista puede olvidar sus datos de registro al reservar un tour & Proporcionar datos manualmente al guía & Usar el correo electrónico o un código QR para la identificación rápida \\ \hline
+Soporte y asistencia & Alta & Turistas y guías pueden necesitar ayuda con problemas en las reservas & Contacto manual con la agencia o guías & Incorporar un chat de soporte en línea para resolver dudas en tiempo real \\ \hline
+\end{tabular}
+\caption{Principales necesidades de los implicados}
+\label{tab:necesidades_implicados}
+\end{table}

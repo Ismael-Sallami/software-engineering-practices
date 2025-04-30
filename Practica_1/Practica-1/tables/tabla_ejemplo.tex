@@ -1,0 +1,35 @@
+\begin{table}[htp]
+\centering
+
+    % Esta primera línea define las columnas de la tabla. Los posibles tipos de columna son:
+    % c: texto centrado
+    % l: texto alineado a la izquierda
+    % r: texto centrado a la derecha
+    % p: columna de ancho fijo
+    % Las columnas tienen ancho dinámico según la anchura máxima de los elementos que contengan.
+
+    % Las columnas l/r/c no parten el texto en filas diferentes si éste es demasiado largo. Para ello, puede utilizar el tipo de columna de ancho fijo "p".
+    
+    % Las barras verticales | se usan para definir los bordes verticales de la tabla. Pruebe a eliminar algunas y observe qué ocurre.
+    \begin{tabular}{ | l | c | r | p{2cm} | }
+        
+        % A continuación van las filas de la tabla. En cada fila, las columnas se separan con el carácter &
+        % Para terminar una fila se usa \\
+        % Para incluir un borde horizontal entre filas se usa \hline
+
+        % Cabecera con textos en negrita:
+        \hline
+        \textbf{Columna L} & \textbf{Columna C} & \textbf{Columna R} & \textbf{Columna P}\\
+        \hline
+        
+        % Cuerpo de la tabla:
+        Texto de ejemplo & Texto de ejemplo & Texto de ejemplo & Texto de ejemplo\\
+        \hline
+        ABC & DEF & HIJ & KLM\\
+        \hline
+        
+    \end{tabular} 
+    
+    \caption{Tabla LaTeX de ejemplo}
+    \label{table:ejemplo} 
+\end{table}
