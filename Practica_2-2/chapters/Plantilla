@@ -1,0 +1,75 @@
+% ======Tabla Caso de uso Número: x =========================
+\begin{table}[H]
+\begin{tabular}{llllllll}
+\hline
+\multicolumn{1}{|l|}{Caso de Uso}  & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Nombre del CU \textgreater{}\textgreater{}}}}                                                                                                                     & \multicolumn{2}{l|}{\cellcolor[HTML]{E6E6E6}{\color[HTML]{808080} \textit{\textless{}\textless Identificador \textgreater{}\textgreater{}}}} \\ \hline
+\multicolumn{1}{|l|}{Actores}      & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Listado de los actores participantes en el CU \textgreater{}\textgreater \textless{}\textless Podemos indicar quien es el que inicia el CU usando (I) \textgreater{}\textgreater{}}}}                                                                                                                            \\ \hline
+\multicolumn{1}{|l|}{Tipo}         & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Tipo del caso de uso \textgreater{}\textgreater  \textless{}\textless Primario, Secundario u Opcional | \textless{}\textless{}Esencial o  Real \textgreater{}\textgreater{}}}}                                                                                                                                   \\ \hline
+\multicolumn{1}{|l|}{Referencias}  & \multicolumn{2}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Indicamos que requisitos se pueden incluir dentro de este CU \textgreater{}\textgreater{}}}}                             & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless CU que tienen relación con este \textgreater{}\textgreater{}}}}                                                \\ \hline
+\multicolumn{1}{|l|}{Precondición} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Condiciones sobre el estado del sistema que tienen que ser ciertas para que se pueda realizar el CU \textgreater{}\textgreater{}}}}                                                                                                                                                                              \\ \hline
+\multicolumn{1}{|l|}{Poscondición} & \multicolumn{7}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Efectos que de forma inmediata tiene la realización del CU sobre el estado del sistema \textgreater{}\textgreater{}}}}                                                                                                                                                                                           \\ \hline
+\multicolumn{1}{|l|}{Autor}        & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Esta línea se podría repetir para mantener una historia de cambios del CU \textgreater{}\textgreater{}}}} & \multicolumn{2}{l|}{Fecha} & \multicolumn{1}{l|}{} & \multicolumn{2}{l|}{Versión}                                  & \multicolumn{1}{l|}{}                                                           \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Propósito}                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|l|}{{\color[HTML]{808080} \textit{\textless{}\textless Descripción general del CU (Suficiente con una línea) \textgreater{}\textgreater{}}}}                                                                                                                                                                                                                                                                \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Resumen}                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+\multicolumn{8}{|l|}{{\color[HTML]{808080} \textit{\textless{}\textless Descripción de alto nivel del flujo normal (básico) del caso de uso (Suficiente con un pequeño párrafo \textgreater{}\textgreater{}}}}                                                                                                                                                                                                               \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Curso Normal (Básico)}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+    \multicolumn{1}{|c|}{1}  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Actor 1: Acción realizada por el actor}}}                                                                                                                                                                                        & \multicolumn{1}{l|}{}                                  & \multicolumn{5}{l|}{}                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|c|}{2}  & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{Actor 2: Acción realizada por el actor}}}                                                                                                                                                                                        & \multicolumn{1}{c|}{{\color[HTML]{808080} \textit{3}}} & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Acción realizada por el sistema}}}                                                                                                                \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                              & \multicolumn{1}{l|}{}                                  & \multicolumn{5}{l|}{}                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                              & \multicolumn{1}{c|}{{\color[HTML]{808080} \textit{N}}} & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{Cuando se realiza la inclusión de otro caso de uso lo representaremos de la forma. Incluir (CU-identificador. CU-nombre)}}}                       \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                              & \multicolumn{1}{l|}{}                                  & \multicolumn{5}{l|}{}                                                                                                                                                                               \\ \hline
+    \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Se incluyen la secuencia de acciones realizadas por los actores que intervienen en el CU , se usaran, frases cortas, que describan el dialogo entre los actores y el sistema\textgreater{}\textgreater{}}}} & \multicolumn{1}{l|}{}                                  & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Se incluyen la secuencia de acciones que realiza el sistema ante las acciones de los actores \textgreater{}\textgreater{}}}} \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}    
+    \multicolumn{6}{|l|}{\cellcolor[HTML]{F2F2F2}Cursos Alternos}                                                                                                                                                                                                                                                                                                                                                                                                                                    &                                      &                                    \\ \cline{1-6}
+    \multicolumn{1}{|c|}{1a} & \multicolumn{5}{l|}{Descripción de la secuencia de acciones alternas a la acción 1 del Curso Normal}                                                                                                                                                                                                                                                                                                                                                                  &                                      &                                    \\ \cline{1-6}
+    \multicolumn{1}{|c|}{1b} & \multicolumn{5}{l|}{}                                                                                                                                                                                                                                                                                                                                                                                                                                                 &                                      &                                    \\ \cline{1-6}
+    \multicolumn{1}{|l|}{}   & \multicolumn{5}{l|}{{\color[HTML]{808080} \textit{\textless{}\textless Secuencia de los cursos alternos del CU \textgreater{}\textgreater{}}}}                                                                                                                                                                                                                                                                                                                        &                                      &                                    \\ \cline{1-6}                                                                                                                                                                                                                                                                                &                                                        &                                        &                                        &                                       &                                      &                                   
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Otros datos}                                                                                                                                                                                                                                                                                                        \\ \hline
+    \multicolumn{1}{|l|}{Frecuencia esperada} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Varias veces al día, dependiendo del número de usuarios.}} & \multicolumn{1}{l|}{Rendimiento} & \multicolumn{5}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} La acción completa no debe tomar más de 2 minutos si el libro está disponible.}} \\ \hline
+    \multicolumn{1}{|l|}{Importancia}         & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Alta. Es una de las funciones principales del sistema.}}   & \multicolumn{1}{l|}{Urgencia}    & \multicolumn{5}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Alta. Necesaria en las primeras fases del desarrollo.}}                          \\ \hline
+    \multicolumn{1}{|l|}{Estado}              & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Definido. En espera de implementación.}}                   & \multicolumn{1}{l|}{Estabilidad} & \multicolumn{5}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{808080} Alta. Requisitos claros y estables.}}                                            \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{llllllll}
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}Comentarios}                                                                                                                                                                                                                                                                                                        \\ \hline
+    \multicolumn{8}{|l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{999999} \begin{tabular}[c]{@{}l@{}}Este caso de uso puede desencadenar otros procesos, como el pedido\\ al proveedor. Requiere integración con el inventario y el sistema de\\ gestión de préstamos.\end{tabular}}}                                                                                   \\ \hline                                                                                                                            &                                  &                             &                             &                             &                             &                           
+    \end{tabular}
+    \end{table}
+
+
+
+
+
+
+
