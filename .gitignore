@@ -1,17 +1,19 @@
+# LaTeX
 **/*.aux
 **/*.log
-**/*.fls
 **/*.out
 **/*.toc
+**/*.lof
+**/*.lol
+**/*.lot
+**/*.fls
 **/*.fdb_latexmk
 **/*.synctex.gz
 **/*.bbl
-**/*.lof 
-**/*.blg 
-**/*.lol 
-**/*.lot
-**/*.pdf 
+**/*.blg
+**/*.pdf
 
-
-
-
+# minted cache
+**/_minted-*/
+**/*.pygtex
+**/*.pygstyle

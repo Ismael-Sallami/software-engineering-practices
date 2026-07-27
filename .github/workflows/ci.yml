@@ -1,0 +1,27 @@
+# Compiles the seven reports with a full TeX Live and checks a PDF comes out of
+# each one. latexmk returns non-zero when a figure is missing even though it still
+# produces the document, so what the script asserts is the PDF.
+
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build every report
+        run: bash tools/build-docs.sh
+
+      - name: Keep the PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: docs/**/*.pdf
