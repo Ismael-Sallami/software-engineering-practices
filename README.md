@@ -11,7 +11,8 @@ four and compiled from LaTeX sources on every push.
 
 Coursework for **Fundamentos de Ingeniería del Software**, year 3 of the double degree in
 Computer Science and Business Administration, University of Granada (2024-25). Team work
-with **Julián Carrión**, **Alicia Ruíz** and **Jesús Rodríguez**; the third practice splits
+with **Julián Carrión Tovar**, **Alicia Ruiz Gómez** and **Jesús Rodríguez González**; the
+third practice splits
 the chapters by author.
 
 ## The problem
@@ -102,5 +103,5 @@ every report builds
 
 ## Authors and licence
 
-Ismael Sallami Moreno, Julián Carrión, Alicia Ruíz and Jesús Rodríguez. Released under the
-MIT licence (see `LICENSE`).
+Ismael Sallami Moreno, Julián Carrión Tovar, Alicia Ruiz Gómez and Jesús Rodríguez González.
+Released under the MIT licence (see `LICENSE`).
