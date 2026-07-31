@@ -83,7 +83,7 @@ ok    docs/practice-3-part-2/main.pdf  85 KB
 every report builds
 ```
 
-## What I learned
+## What we learned
 
 - A glossary is not filler. Half the corrections between deliverables came from two people
   using the same word with different scopes, and the glossary is where that gets settled.
