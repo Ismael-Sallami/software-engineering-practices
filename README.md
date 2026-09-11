@@ -9,7 +9,7 @@ four and compiled from LaTeX sources on every push.
 
 ## Context
 
-Coursework for **Fundamentos de Ingeniería del Software**, year 3 of the double degree in
+Coursework for **Software Engineering Fundamentals**, year 3 of the double degree in
 Computer Science and Business Administration, University of Granada (2024-25). Team work
 with **Julián Carrión Tovar**, **Alicia Ruiz Gómez** and **Jesús Rodríguez González**; the
 third practice splits
